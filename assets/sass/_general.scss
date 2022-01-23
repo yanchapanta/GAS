@@ -1,13 +1,380 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+:root{
+  --first-color:#D8E1FF;
+  --first-alpha-color:rgba(216, 225, 255, 0.5);
+  --second-color:#03071E;  
+  --second-color-rbg:3, 7, 30;  
+  --second-alpha-color:rgba(3, 7, 30, 0.533);  
+  --thrid-color:#43A3D6;
+  --thrid-alpha-color:rgba(67, 163, 214, 0.579);
+  --white-color:#FFF;
+  --gray-light-color:#F3F3F3;
+  --gray-color:#CCCCCC;
+  --gray-dark-color:#666666;
+  --black-color:#000000;
+  --link-color:#407BA7;
+  --title-color:#E4001A;
+  --text-color:#222222;
+  --boton-color:#E4001A;
 
+}
 body{
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background-color: rebeccapurple;
-    
-    
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;      
 }
+html {   
+    font-size: 16px;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  input[type=text] {
+    width: 100%;
+    border: thin solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+    background-image: url('/assets/img/icon/btn-rearch.svg');
+    background-position: right center;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    padding: 0.2rem 1.5rem 0.2rem 0.4rem;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color: #30302d;
+}
+  input[type=text]:focus {
+    background-image: url('/assets/img/icon/btn-rearch-active.svg');
+  }
+  input[type=submit]:hover{
+
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  h1{
+    font-size: clamp(1rem,6vw,2.8rem);
+}
+.plr{
+    padding: 0 1rem;
+}
+
+label{
+  /* padding: 1rem; */
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .flex-column{flex-direction: column;}
+  .flex-row{flex-direction: row;}
+  .justifi-content-center{
+      justify-content: center;
+  }
+  .justifi-content-between{
+      justify-content: space-between;
+  }
+  .align-items-center{
+      align-items: center;
+  }
+  .gap-1{ gap:1rem}
+  .gap-2{ gap:2rem}
+  .gap-3{ gap:3rem}
+  .gap-4{ gap:4rem}
+  .gap-5{ gap:5rem}
+
+  .pr-0{padding-right:  0rem;}
+  .pr-1{padding-right:  1rem;}
+  .pr-2{padding-right:  2rem;}
+  .pr-3{padding-right:  3rem;}
+  .pr-4{padding-right:  4rem;}
+  .pr-5{padding-right:  5rem;}
+
+  .pl-0{padding-left: 0rem;}  
+  .pl-1{padding-left: 1rem;}  
+  .pl-2{padding-left: 2rem;}  
+  .pl-3{padding-left: 3rem;}  
+  .pl-4{padding-left: 4rem;}  
+  .pl-5{padding-left: 5rem;}
+
+  .mt-0{margin-top: 0rem;}
+  .mt-1{margin-top: 1rem;}
+  .mt-2{margin-top: 2rem;}
+  .mt-3{margin-top: 3rem;}
+  .mt-4{margin-top: 4rem;}
+  .mt-5{margin-top: 5rem;}
+  .row > [class^="col"] {
+    // border: thin solid gray;
+    // // padding: 1rem;
+  }
+  .col-1 {
+    width: 8.333333333333333%;
+  }
+  
+  .col-2 {
+    width: 16.66666666666667%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.33333333333333%;
+  }
+  
+  .col-5 {
+    width: 41.66666666666667%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.33333333333333%;
+  }
+  
+  .col-8 {
+    width: 66.66666666666667%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.33333333333333%;
+  }
+  
+  .col-11 {
+    width: 91.66666666666667%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 30em) {
+    .col-sm-1 {
+      width: 8.333333333333333%;
+    }
+  
+    .col-sm-2 {
+      width: 16.66666666666667%;
+    }
+  
+    .col-sm-3 {
+      width: 25%;
+    }
+  
+    .col-sm-4 {
+      width: 33.33333333333333%;
+    }
+  
+    .col-sm-5 {
+      width: 41.66666666666667%;
+    }
+  
+    .col-sm-6 {
+      width: 50%;
+    }
+  
+    .col-sm-7 {
+      width: 58.33333333333333%;
+    }
+  
+    .col-sm-8 {
+      width: 66.66666666666667%;
+    }
+  
+    .col-sm-9 {
+      width: 75%;
+    }
+  
+    .col-sm-10 {
+      width: 83.33333333333333%;
+    }
+  
+    .col-sm-11 {
+      width: 91.66666666666667%;
+    }
+  
+    .col-sm-12 {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 48em) {
+    .col-md-1 {
+      width: 8.333333333333333%;
+    }
+  
+    .col-md-2 {
+      width: 16.66666666666667%;
+    }
+  
+    .col-md-3 {
+      width: 25%;
+    }
+  
+    .col-md-4 {
+      width: 33.33333333333333%;
+    }
+  
+    .col-md-5 {
+      width: 41.66666666666667%;
+    }
+  
+    .col-md-6 {
+      width: 50%;
+    }
+  
+    .col-md-7 {
+      width: 58.33333333333333%;
+    }
+  
+    .col-md-8 {
+      width: 66.66666666666667%;
+    }
+  
+    .col-md-9 {
+      width: 75%;
+    }
+  
+    .col-md-10 {
+      width: 83.33333333333333%;
+    }
+  
+    .col-md-11 {
+      width: 91.66666666666667%;
+    }
+  
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 62em) {
+    .col-lg-1 {
+      width: 8.333333333333333%;
+    }
+  
+    .col-lg-2 {
+      width: 16.66666666666667%;
+    }
+  
+    .col-lg-3 {
+      width: 25%;
+    }
+  
+    .col-lg-4 {
+      width: 33.33333333333333%;
+    }
+  
+    .col-lg-5 {
+      width: 41.66666666666667%;
+    }
+  
+    .col-lg-6 {
+      width: 50%;
+    }
+  
+    .col-lg-7 {
+      width: 58.33333333333333%;
+    }
+  
+    .col-lg-8 {
+      width: 66.66666666666667%;
+    }
+  
+    .col-lg-9 {
+      width: 75%;
+    }
+  
+    .col-lg-10 {
+      width: 83.33333333333333%;
+    }
+  
+    .col-lg-11 {
+      width: 91.66666666666667%;
+    }
+  
+    .col-lg-12 {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 75em) {
+    .col-xl-1 {
+      width: 8.333333333333333%;
+    }
+  
+    .col-xl-2 {
+      width: 16.66666666666667%;
+    }
+  
+    .col-xl-3 {
+      width: 25%;
+    }
+  
+    .col-xl-4 {
+      width: 33.33333333333333%;
+    }
+  
+    .col-xl-5 {
+      width: 41.66666666666667%;
+    }
+  
+    .col-xl-6 {
+      width: 50%;
+    }
+  
+    .col-xl-7 {
+      width: 58.33333333333333%;
+    }
+  
+    .col-xl-8 {
+      width: 66.66666666666667%;
+    }
+  
+    .col-xl-9 {
+      width: 75%;
+    }
+  
+    .col-xl-10 {
+      width: 83.33333333333333%;
+    }
+  
+    .col-xl-11 {
+      width: 91.66666666666667%;
+    }
+  
+    .col-xl-12 {
+      width: 100%;
+    }
+  }
+  

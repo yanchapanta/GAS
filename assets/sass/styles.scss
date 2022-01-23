@@ -1,14 +1,13 @@
 @import 'values';
 @import 'mixins';
 @import 'general';
+@import 'gridDIvision';
+@import 'header';
 
 
-.header{
-    width: 100%;
-    ul{
-        display: flex;
-    }
-}
+
+
+
 
 
 .items{

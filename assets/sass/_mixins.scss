@@ -14,3 +14,21 @@
         @content;
     }
 }
+@mixin boton-color($grd1, $grd2, $grd3,$grd4) {    
+    background: linear-gradient(270deg, $grd1 -0.05%, $grd2 37.47%, $grd3 57.27%, $grd4 100%);
+  } 
+@mixin icon($image, $bottom, $right){
+    position: fixed;
+    bottom: $bottom;
+    right: $right;
+    z-index: 998;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    background-image: url($image);
+    background-repeat: no-repeat;
+    
+    transform-origin: center center;
+    transition:  background-image .3s ease;
+}
+
