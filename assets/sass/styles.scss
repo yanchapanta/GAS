@@ -1,0 +1,28 @@
+@import 'values';
+@import 'mixins';
+@import 'general';
+
+
+.header{
+    width: 100%;
+    ul{
+        display: flex;
+    }
+}
+
+
+.items{
+
+    width: 100%;
+
+    background-color: rgb(103, 150, 150);
+
+    @include tablet(){
+        width: 90%;
+        margin: auto;
+    }
+    @include desktop(){
+        width: 80%;
+        margin: auto;
+    }
+}
