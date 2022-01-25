@@ -11,12 +11,13 @@
 		offArrowoffBtnTopClose.classList.toggle('offBtnTopClose')
 	})
 })()
-;(() => {
-	const idCategoria = document.querySelector('#idCategoria')
-	const btnCategoria = document.querySelector('#btnCategoria')
+// (() => {
+// 	const idCategoria = document.querySelector('#idCategoria')
+// 	const btnCategoria = document.querySelector('#btnCategoria')
 
-	btnCategoria.addEventListener('click', () => {
-		btnCategoria.classList.toggle('show-traslation-boton')
-		idCategoria.classList.toggle('show-traslation')
-	})
-})()
+// 	btnCategoria.addEventListener('click', () => {
+// 		btnCategoria.classList.toggle('show-traslation-boton')
+// 		idCategoria.classList.toggle('show-traslation')
+// 	})
+// })()
+// ;

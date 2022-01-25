@@ -23,7 +23,7 @@
 }
 
 body {
-  max-width: 1500px;
+  width: 80%;
   height: 100vh;
   margin: auto;
   -webkit-box-sizing: border-box;
@@ -967,7 +967,7 @@ input[type='submit']:hover,
 
 .productT-card {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: var(--gray-light-color);
   background-color: white;
   -webkit-transition: -webkit-box-shadow 0.3s ease;
@@ -979,6 +979,12 @@ input[type='submit']:hover,
 @media only screen and (min-width: 600px) {
   .productT-card {
     border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .productT-card {
+    border-radius: 15px;
   }
 }
 
