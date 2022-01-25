@@ -1,23 +1,37 @@
-.header-logo{
-    grid-area: header-logo;
-    background-color: sandybrown;
+.header-logo {
+	grid-area: header-logo;
+	// background-color: sandybrown;
 }
-.header-title{
-    grid-area: header-title;
-    background-color: rgb(187, 244, 96);
+.header-title {
+	grid-area: header-title;
+	// background-color: rgb(187, 244, 96);
 }
-.header-menu{
-    grid-area: header-menu;
-    background-color: rgb(244, 96, 195);
+.header-menu {
+	grid-area: header-menu;
+	// background-color: rgb(244, 96, 195);
 }
-.header-whatLogin{
-    grid-area: header-whatLogin;
-    background-color: rgb(72, 139, 41);
+.header-whatLogin {
+	grid-area: header-whatLogin;
+	// background-color: rgb(72, 139, 41);
 }
-.grid-header{
-    grid-template: 
-    "header-logo header-title"
-    "header-menu header-menu"
-    "header-whatLogin header-whatLogin"
-    ;
+.grid-header {
+	display: grid;
+	grid-template-columns: 200px 1fr 200px;
+	grid-auto-rows: auto;
+	grid-template:
+		'header-logo      header-title     header-title'
+		'header-menu      header-menu      header-menu'
+		'header-whatLogin header-whatLogin header-whatLogin';
+	@include desktop() {
+		grid-template-columns: 20% 1fr 30%;
+		grid-template:
+			'header-title     header-title     header-title' 7rem
+			'header-logo      header-menu      header-whatLogin';
+	}
 }
+.header-logo {
+	// justify-self: centker;
+	place-self: center;
+}
+
+// seccion division grid

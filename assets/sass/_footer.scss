@@ -1,0 +1,19 @@
+footer {
+	background-color: var(--second-color);
+	background: linear-gradient(180deg, #03071e 0%, #02071f 56.77%, #03071e 100%);
+	.footer {
+		text-align: center;
+		padding: 0.5rem;
+		font-size: 0.8rem;
+		background: linear-gradient(
+			90deg,
+			#f9fafc 10.37%,
+			#e1e8ef 27.17%,
+			#ebeef3 43.51%,
+			#e1e8ef 66.85%,
+			#b7c2ce 100%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}

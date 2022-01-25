@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GAS Tecnological Accessories Shop</title>
+    <title>TAS Tecnological Accessories Shop</title>
     <meta name="description"
         content="Hola bienvenid@ a mi sitio web Tecnological Accessories Shop, Productos para tu hogar" />
     <link rel="canonical" href="https://yanchapanta.github.io/GAS/" />
@@ -35,66 +35,273 @@
 </head>
 
 <body>
-
-    <div class="grid-header">
-        <div class="header-logo">header-logo</div>
-        <div class="header-title">header-title</div>
-        <div class="header-menu">header-menu</div>
-        <div class="header-whatLogin">header-whatLogin</div>
-    </div>
-    <!------------------- 
-        slogan
-     ------------------->
-    <div class="row logo plr mt-1">
-        <div class="col-2">
-            <img src="/assets/img/logo/favicon.svg" alt="">
+    <div class="grid-header plr">
+        <!------------------- 
+            slogan titulo
+            ------------------->
+        <div class="header-title d-flex justifi-content-center align-items-center">
+            <h1 id="inicio">Tecnological Accessories Shop</h1>
         </div>
-        <div class="col-10">
-            <h1>Tecnological Accessories Shop</h1>
 
+        <!------------------- 
+        slogan titulo
+        ------------------->
+        <div class="header-logo d-flex justifi-content-center align-items-center">
+            <img src="/assets/img/logo/favicon.svg" alt="Logo">
         </div>
+
+
+        <!------------------- 
+        menu mobil y destoktop
+        ------------------->
+        <div class="header-menu">
+            <a href="#" class="offMessage"></a>
+            <input id="offBtnTopClose" type="checkbox" class="offBtnTop" hidden>
+
+            <a href="#inicio">
+                <input id="offBtnTopClose" type="checkbox" class="offBtnTop">
+                <label id="offArrow" class="offArrow"></label>
+            </a>
+
+
+
+            <input type="checkbox" class="off-canvas-btn">
+            <label class="off-canvas-burger"></label>
+            <nav class="off-canvas-menu d-flex justifi-content-center align-items-center">
+                <div class="off-canvas-menu-container ">
+                    <label href="#" id="link-1" class="off-canvas-link menu-row">
+                        Inicio
+                        <input type="radio" checked="checked" cheched='cheked' name="menu">
+
+                        <span class="checkedMenu"></span>
+                    </label>
+                    <label href="#" id="link-2" class="off-canvas-link menu-row">
+                        Quienes somos
+                        <input type="radio" checked="checked" name="menu">
+                        <span class="checkedMenu"></span>
+                    </label>
+                    <label href="#" id="link-3" class="off-canvas-link menu-row">
+                        Contactos
+                        <input type="radio" checked="checked" name="menu">
+                        <span class="checkedMenu"></span></label>
+                    <label href="#" id="link-4" class="off-canvas-link menu-row">
+                        Soporte
+                        <input type="radio" checked="checked" name="menu">
+                        <span class="checkedMenu"></span>
+                    </label>
+                </div>
+            </nav>
+        </div>
+
+        <!------------------- 
+            slogan whatsap con boton ingresar
+         ------------------->
+        <div class="header-whatLogin ">
+            <div class=" row justifi-content-between">
+                <div class=" whatsapp d-flex justifi-content-center align-items-center">
+                    <i class="fab fa-whatsapp"></i>
+                    <strong class="">+593 698867385</strong>
+                </div>
+                <button class=" btn">Ingresar</button>
+            </div>
+        </div>
+
+
     </div>
 
-    <!------------------- 
-        slogan whatsap con boton ingresar
-     ------------------->
-    <div class=" row justifi-content-between plr mt-1">
-        <div class="d-flex justifi-content-center align-items-center">
-            <i class="fab fa-whatsapp"></i>
-            <strong>+593 698867385</strong>
-        </div>
-        <button class="btn">Ingresar</button>
-    </div>
     <!------------------- 
         formulario buscar
      ------------------->
-    <div class="mt-1 ">
+    <div class="mt-1 formBuscar">
         <form class="row justifi-content-between plr form-search gap-1">
-            <div class="d-flex flex-column gap-1">
-                <label for="search">Describe tu producto:</label>
-                <input type="text" id="search">
+            <div class="col-12 col-lg-8 d-flex flex-column flex-lg-row gap-1">
+                <label class="col-lg-11" for="search">Describe tu producto:</label>
+                <input class="col-lg-1" type="text" id="search">
             </div>
-            <input class="btn" type="submit" value="Buscar">
+            <input class="btn col-lg-2" type="submit" value="Buscar">
 
 
         </form>
+
     </div>
-    
-    <!------------------- 
-        menu mobil y destoktop
-        ------------------->
-    <input id="offBtnTopClose" type="checkbox" class="">
-    <label id="offArrow" class="offArrow"></label>
-    <input type="checkbox" class="off-canvas-btn">
-    <label class="off-canvas-burger"></label>
-    <nav class="off-canvas-menu">
-        <div class="off-canvas-menu-container">
-            <a href="#" class="off-canvas-link">Inicio</a>
-            <a href="#" class="off-canvas-link">Quienes somos</a>
-            <a href="#" class="off-canvas-link">Contactos</a>
-            <a href="#" class="off-canvas-link">Soporte</a>
+
+
+    <div>
+        <button id="btnCategoria" class="btn-category mt-1">
+            <div>
+                <img src="./assets/img/icon/category.svg" alt="ok">
+            </div>
+        </button>
+
+        <div class="main ">
+
+            <div id="idCategoria" class="category plr">
+
+                <div>
+                    <label class="checkbox-container">Computadoras
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">Laptos
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">Phone
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                </div>
+            </div>
+
+            <div class="produtsT">
+                <div class="productT-card">
+                    <a href="#" class="">
+                        <img src="./assets/img/products/clas.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div>
+                            <h2>Crema limpiadora</h2>
+                            <p>2022 La nueva tecnologia de productos eléctricos poro limpiador economico</p>
+                        </div>
+                        <div class="precio-text">
+                            <p><strong class="precio-dolar">$3,50-$25,00</strong> <span>/Unidad</span> </p>
+                            <p>1.0 Unidades <span>(MOQ)</span> </p>
+                        </div>
+                        <bottom class="btn">
+                            Contactar proveedor
+                        </bottom>
+                    </div>
+                </div>
+                <div class="productT-card">
+                    <a href="#" class="">
+                        <img src="./assets/img/products/scot.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div>
+                            <h2>Crema limpiadora</h2>
+                            <p>2022 La nueva tecnologia de productos eléctricos poro limpiador economico</p>
+                        </div>
+                        <div class="precio-text">
+                            <p><strong class="precio-dolar">$3,50-$25,00</strong> <span>/Unidad</span> </p>
+                            <p>1.0 Unidades <span>(MOQ)</span> </p>
+                        </div>
+                        <bottom class="btn">
+                            Contactar proveedor
+                        </bottom>
+                    </div>
+                </div>
+                <div class="productT-card">
+                    <a href="#" class="">
+                        <img src="./assets/img/products/rahu.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div>
+                            <h2>Crema limpiadora</h2>
+                            <p>2022 La nueva tecnologia de productos eléctricos poro limpiador economico</p>
+                        </div>
+                        <div class="precio-text">
+                            <p><strong class="precio-dolar">$3,50-$25,00</strong> <span>/Unidad</span> </p>
+                            <p>1.0 Unidades <span>(MOQ)</span> </p>
+                        </div>
+                        <bottom class="btn">
+                            Contactar proveedor
+                        </bottom>
+                    </div>
+                </div>
+                <div class="productT-card">
+                    <a href="#" class="">
+                        <img src="./assets/img/products/clas.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div>
+                            <h2>Crema limpiadora</h2>
+                            <p>2022 La nueva tecnologia de productos eléctricos poro limpiador economico</p>
+                        </div>
+                        <div class="precio-text">
+                            <p><strong class="precio-dolar">$3,50-$25,00</strong> <span>/Unidad</span> </p>
+                            <p>1.0 Unidades <span>(MOQ)</span> </p>
+                        </div>
+                        <bottom class="btn">
+                            Contactar proveedor
+                        </bottom>
+                    </div>
+                </div>
+                <div class="productT-card">
+                    <a href="#" class="">
+                        <img src="./assets/img/products/clas.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div>
+                            <h2>Crema limpiadora</h2>
+                            <p>2022 La nueva tecnologia de productos eléctricos poro limpiador economico</p>
+                        </div>
+                        <div class="precio-text">
+                            <p><strong class="precio-dolar">$3,50-$25,00</strong> <span>/Unidad</span> </p>
+                            <p>1.0 Unidades <span>(MOQ)</span> </p>
+                        </div>
+                        <bottom class="btn">
+                            Contactar proveedor
+                        </bottom>
+                    </div>
+                </div>
+                <div class="productT-card">
+                    <a href="#" class="">
+                        <img src="./assets/img/products/horwar.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div>
+                            <h2>Crema limpiadora</h2>
+                            <p>2022 La nueva tecnologia de productos eléctricos poro limpiador economico</p>
+                        </div>
+                        <div class="precio-text">
+                            <p><strong class="precio-dolar">$3,50-$25,00</strong> <span>/Unidad</span> </p>
+                            <p>1.0 Unidades <span>(MOQ)</span> </p>
+                        </div>
+                        <bottom class="btn">
+                            Contactar proveedor
+                        </bottom>
+                    </div>
+                </div>
+                <div class="productT-card">
+                    <a href="#" class="">
+                        <img src="./assets/img/products/ke98.jpg" alt="">
+                    </a>
+                    <div class="p-1">
+                        <div>
+                            <h2>Crema limpiadora</h2>
+                            <p>2022 La nueva tecnologia de productos eléctricos poro limpiador economico</p>
+                        </div>
+                        <div class="precio-text">
+                            <p><strong class="precio-dolar">$3,50-$25,00</strong> <span>/Unidad</span> </p>
+                            <p>1.0 Unidades <span>(MOQ)</span> </p>
+                        </div>
+                        <bottom class="btn">
+                            Contactar proveedor
+                        </bottom>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
         </div>
-    </nav>
+    </div>
+
+
+
+
+    <br>
+    <footer>
+        <div class="footer">
+            Create by www.marcoyanchapanta.tk
+        </div>
+    </footer>
+
 
 
     <script src="assets/js/main.js"></script>
