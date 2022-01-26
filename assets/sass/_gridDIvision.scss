@@ -23,9 +23,11 @@
 		'header-menu      header-menu      header-menu'
 		'header-whatLogin header-whatLogin header-whatLogin';
 	@include desktop() {
+		place-self: center;
+		
 		grid-template-columns: 20% 1fr 30%;
 		grid-template:
-			'header-title     header-title     header-title' 7rem
+			'header-title     header-title     header-title' minmax(5rem, 7rem)
 			'header-logo      header-menu      header-whatLogin';
 	}
 }

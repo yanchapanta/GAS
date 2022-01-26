@@ -36,11 +36,32 @@
 	}
 	if (countChild !== 0) {
 		console.log('si hay datos')
-		console.log('btnLoadHome', btnLoadAbout)
 
 		btnLoadHome.addEventListener('change', (e) => {
 			e.preventDefault
 			xmlCallComponent(url1)
+			setTimeout(() => {
+				;(() => {
+					const offArrow = document.getElementById('offArrow')
+					const offArrowoffBtnTopClose =
+						document.querySelector('#offBtnTopClose')
+
+					offArrow.addEventListener('click', (e) => {
+						e.preventDefault
+						offArrowoffBtnTopClose.classList.toggle('offBtnTopClose')
+					})
+				})()
+				;(() => {
+					const idCategoria = document.querySelector('#idCategoria')
+					console.log('idCategoria', idCategoria)
+					const btnCategoria = document.querySelector('#btnCategoria')
+					btnCategoria.addEventListener('click', (e) => {
+						e.preventDefault
+						btnCategoria.classList.toggle('show-traslation-boton')
+						idCategoria.classList.toggle('show-traslation')
+					})
+				})()
+			}, 300)
 		})
 		btnLoadAbout.addEventListener('change', (e) => {
 			e.preventDefault
